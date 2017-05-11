@@ -96,6 +96,28 @@ function getThingByColor(color) {
   return things[color] || 'Sorry, no thing of that color exists';
 }
 
+function myFunction(message) {
+  console.log(message);
+
+  return true;
+}
+
+var myOtherFunction = function myOtherFunction() {
+  console.log('function expression');
+};
+
+console.log(hoistedVariable);
+var hoistedVariable = 'test';
+
+(function invokeImmediately() {
+  console.log('invoked automatically');
+}());
+
+!function alsoInvokedAutomatically() {
+  console.log('invoked automatically too');
+}();
+
+
 
 
 
