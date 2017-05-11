@@ -117,6 +117,20 @@ var hoistedVariable = 'test';
   console.log('invoked automatically too');
 }();
 
+// scope
+// defines the accessibility of variables in our code
+// functions create their own scope
+// variables defined inside of a function can't be updated outside of the function
+
+
+var global = 1
+function aFunction() {
+  var local = 2;
+  console.log(global);
+  console.log(local);
+}
+
+
 
 
 
