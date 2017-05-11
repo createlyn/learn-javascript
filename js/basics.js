@@ -73,6 +73,29 @@ modulusAssignment %= 2; // modulusAssignment = 1
 // 1 === true -- '' -- returns false
 
 
+var precedence = 1 + 4 * 2; // precedence = 9
+// reference - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+
+// Objects
+var objectNew = {
+  property1: true,
+  property2: 'hello'
+};
+
+var stringNew = 'hello';
+var stringObject = new String('An object string');
+
+// Functions
+function getThingByColor(color) {
+  var things = {
+    red: 'a red thing',
+    green: 'a green thing',
+    blue: 'a blue thing'
+  };
+
+  return things[color] || 'Sorry, no thing of that color exists';
+}
+
 
 
 
