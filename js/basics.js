@@ -130,6 +130,43 @@ function aFunction() {
   console.log(local);
 }
 
+// strict mode
+// forces some silent errors to throw real errors - easier for debugging
+// prevents accidental global variables when omitting the var statement
+
+// 'use strict'
+// first line of function or file
+// pref. in function to avoid concatenation issues
+
+// this
+// usually an object
+// different values depending on where it is used
+// in global scope - this refers to the window object
+// inside the method of a custom object - this is the custom object
+// in a constructor - this is the instance object returned by the constructor
+
+(function () {
+  'use strict';
+  console.log(this);
+
+  var object = {
+    property: 'I belong to this',
+    method: function () {
+      return this.property;
+    }
+  }
+
+  console.log(object.method());
+
+  function Person(name) {
+    this.name = name;
+  }
+
+  var bob = new Person('Bob');
+  console.log(bob.name);
+}());
+
+
 
 
 
