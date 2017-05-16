@@ -166,7 +166,9 @@ function aFunction() {
   console.log(bob.name);
 }());
 
-var function = 'whoops';
+// var function = 'whoops';
+
+
 
 
 
