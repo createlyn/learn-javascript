@@ -21,5 +21,16 @@
     console.log('It is red');
   }
 
+  if (1) {
+    console.log('We will definitely see this');
+  }
+
+  var array = ['item1']
+  if (array.length) {
+    console.log(array[0]);
+  }
+
+  (true) ? console.log('This one') : console.log('Not this one');
+
 }());
 
