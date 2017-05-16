@@ -32,5 +32,27 @@
 
   (true) ? console.log('This one') : console.log('Not this one');
 
+  var switcher = 'two';
+  switch (switcher) {
+    case 'one':
+      console.log('one');
+      break;
+    case 'two':
+      console.log('two');
+      break;
+  }
+
+  var switcher = 'three';
+  switch (switcher) {
+    case 'one':
+      console.log('one');
+      break;
+    case 'two':
+      console.log('two');
+      break;
+    default:
+      console.log('switcher')
+  }
+
 }());
 
